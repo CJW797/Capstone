@@ -1,0 +1,287 @@
+/*universal styling*/
+
+html {
+  font-size: 16px;
+  width: 90%;
+  margin: auto;
+}
+
+span {
+  font-weight: lighter;
+  color: rgb(80, 80, 80);
+}
+
+p {
+  font-weight: lighter;
+  color: gray;
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: rgb(80, 80, 80);
+  margin-bottom: 1.5rem;
+}
+
+h5 {
+  color: rgb(80, 80, 80);
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+h6 {
+  font-weight: lighter;
+  margin: 2rem 0;
+}
+
+/*header styling*/
+
+header {
+  height: 4rem;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo {
+  height: 2.1rem;
+  margin-left: 1.5rem;
+}
+
+.one {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.two {
+  color: gray;
+  font-size: 1.5rem;
+}
+
+nav {
+  width: 100%;
+  margin-right: 0.5rem;
+  text-align: right;
+}
+
+ul {
+  display: inline-flex;
+}
+
+li {
+  margin-right: 1rem;
+  font-weight: 500;
+}
+
+header a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+/*main banner styling*/
+
+.intro {
+  background-color: lightgray;
+  display: inline-flex;
+}
+
+.img {
+  width: 60%;
+}
+
+.intro img {
+  display: inline-flex;
+  width: 95%;
+  height: auto;
+  margin: 2rem 1.5rem;
+}
+
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  margin-left: 2rem;
+}
+
+h2 {
+  color: rgb(80, 80, 80);
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.intro a {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  background-color: rgb(80, 80, 80);
+  font-size: 1.25rem;
+  padding: .75rem 6rem;
+  text-decoration: none;
+}
+
+/*info banner styling*/
+
+.banner {
+  display: inline-flex;
+}
+
+.practice {
+  width: 60%;
+  padding-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  border-right: .01rem solid lightgray;
+}
+
+.practice img {
+  width: 95%;
+  margin: 2rem 1.5rem 2rem 0;
+}
+
+.info {
+  width: 40%;
+  height: 39rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.od, .oc, .gl {
+  height: 33%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  flex-direction: row;
+  border: .01rem solid lightgray;
+}
+
+.gl {
+  background-color: lightgray;
+}
+
+.od img, .oc img, .gl img {
+  max-width: 11rem;
+  height: auto;
+  margin: 1rem;
+}
+
+.oc img {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.od-text, .oc-text, .gl-text {
+  width: 65%;
+}
+
+.od a, .oc a, .gl a {
+  color: rgb(0, 0, 200);
+  text-decoration: none;
+  margin-top: 2rem;
+}
+
+/*course info styling*/
+
+.start-learning {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 4rem 0;
+}
+
+.start-learning h3 {
+  width: 100%;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.start-learning-text {
+  margin: 1rem;
+}
+
+.software-engineering, .computer-art, .design, .data, .business, .marketing {
+  margin: 1.5rem 1rem;
+  width: 25%;
+}
+
+.software-engineering img, .computer-art img, .design img, .data img, .business img, .marketing img {
+  height: auto;
+  width: 100%
+}
+
+/*thesis banner styling*/
+
+.thesis-banner {
+  margin-left: 1.5rem;
+  padding: 2rem 0;
+  height: 39rem;
+}
+
+.thesis-banner h3 {
+ text-align: center;
+ margin-bottom: 2rem;
+}
+
+.thesis-exhibit {
+  display: inline-flex;
+}
+
+.reimagine-urban {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.reimagine-urban h5 {
+  margin-top: 1.5rem;
+}
+
+.thesis-exhibit2 {
+  width: 40%;
+  margin-left: 1.5rem;
+}
+
+.thesis-exhibit2 img {
+  width: 35%;
+  height: auto;
+  margin: 1rem;
+}
+
+.fisma, .now-and-then {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  flex-direction: row;
+}
+
+.fisma {
+  background-color: lightgray;
+}
+
+.fnt-text {
+  width: 65%;
+}
+
+/*footer styling*/
+
+footer {
+  width: 100%;
+  height: 4rem;
+  margin: auto 1.5rem;
+  display: inline-flex;
+  align-items: baseline;
+}
+
+footer h6 {
+  width: 100%;
+}
+
+footer a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
