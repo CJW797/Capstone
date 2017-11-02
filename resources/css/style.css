@@ -3,8 +3,6 @@
 html {
   font-size: 16px;
   width: auto;
-  border-left: 2rem solid black;
-  border-right: 2rem solid black;
 }
 
 span {
@@ -63,6 +61,13 @@ h6 {
   margin: 2rem 0;
 }
 
+@media only screen and (max-width: 480px) {
+  html {
+    width: auto;
+    border: 0;
+  }
+}
+
 /*header styling*/
 
 header {
@@ -89,6 +94,10 @@ header {
   font-size: 1.5rem;
 }
 
+.mobile-nav {
+  display: none;
+}
+
 nav {
   width: 100%;
   margin-right: 0.5rem;
@@ -105,6 +114,33 @@ li {
 
 header a {
   text-decoration: none;
+}
+
+@media only screen and (max-width: 480px) {
+
+  .logo {
+    display: none;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .mobile-nav img {
+    height: 2.1rem;
+    width: auto;
+    margin: 0 1rem;
+  }
+
+  .one, .two {
+    display: none;
+  }
 }
 
 /*main banner styling*/
@@ -129,7 +165,6 @@ header a {
 .intro-text {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   width: 30%;
   margin-left: 2rem;
@@ -151,8 +186,32 @@ h2 {
   color: #000;
   background-color: #eab36a;
   font-size: 1.25rem;
-  padding: .75rem 6rem;
+  padding: .75rem 0rem;
+  width: 100%;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 480px) {
+
+  .intro {
+    display: inline-flex;
+    flex-direction: column;
+  }
+
+  .intro-text {
+    margin: 2rem auto;
+    width: 90%;
+  }
+
+  .intro img {
+    margin: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .img {
+    width: 100%;
+  }
 }
 
 /*info banner styling*/
@@ -181,6 +240,10 @@ h2 {
   flex-direction: column;
 }
 
+.mobile-img {
+  display: none;
+}
+
 .od, .oc, .gl {
   height: 33%;
   display: flex;
@@ -198,7 +261,7 @@ h2 {
   background-color: #a4f6ff;
 }
 
-.od img, .oc img, .gl img {
+.computer-img {
   max-width: 11rem;
   height: auto;
   margin: 1rem;
@@ -214,9 +277,52 @@ h2 {
 }
 
 .od a, .oc a, .gl a {
-
   text-decoration: none;
   margin-top: 2rem;
+}
+
+@media only screen and (max-width: 480px) {
+
+  .banner {
+    display: inline-flex;
+    flex-direction: column;
+    width: auto;
+    margin: auto;
+  }
+
+  .practice {
+    display: none;
+  }
+
+  .info {
+    width: 100%;
+    height: auto;
+  }
+
+  .od, .oc, .gl {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .oc img {
+    margin: -2rem auto -.25rem;
+  }
+
+  .oc-text, .gl-text {
+    padding-bottom: 2rem;
+  }
+
+  .mobile-img {
+    display: flex;
+    width: 90%;
+    height: auto;
+    padding: 1rem;
+    margin: auto;
+  }
+
+  .computer-img {
+    display: none;
+  }
 }
 
 /*course info styling*/
@@ -252,6 +358,27 @@ h2 {
 .software-engineering img, .computer-art img, .design img, .data img, .business img, .marketing img {
   height: auto;
   width: 100%
+}
+
+@media only screen and (max-width: 480px) {
+
+  .start-learning {
+    display: inline-flex;
+    flex-direction: column;
+  }
+
+  .software-engineering, .computer-art, .design, .data, .business, .marketing {
+    width: auto;
+    margin: .5rem 1rem;
+  }
+
+  .adj {
+    display: none;
+  }
+
+  h5:hover + .adj {
+    display: inline-flex;
+  }
 }
 
 /*thesis banner styling*/
@@ -307,6 +434,28 @@ h2 {
   width: 65%;
 }
 
+@media only screen and (max-width: 480px) {
+
+  .thesis-banner, .thesis-exhibit {
+    display: inline-flex;
+    flex-direction: column;
+    padding: 0;
+    height: auto;
+  }
+
+  .thesis-exhibit2 {
+    display: none;
+  }
+
+  .reimagine-urban {
+    width: auto;
+  }
+
+  .reimagine-urban h5, span {
+    display: none;
+  }
+}
+
 /*footer styling*/
 
 footer {
@@ -326,4 +475,10 @@ footer h6 {
 footer a {
   margin-right: 1.5rem;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 480px) {
+  footer {
+    margin-top: 2rem;
+  }
 }
